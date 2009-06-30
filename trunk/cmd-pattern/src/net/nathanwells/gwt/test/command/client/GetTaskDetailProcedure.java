@@ -4,10 +4,9 @@ import net.nathanwells.gwt.command.client.IProcedure;
 
 public class GetTaskDetailProcedure implements IProcedure<GetTaskDetailArgs,TaskDetail> {
 
-	@Override
 	public TaskDetail go(GetTaskDetailArgs args) {
 		// TODO Auto-generated method stub
 		return null;
 	}
-	
+
 }

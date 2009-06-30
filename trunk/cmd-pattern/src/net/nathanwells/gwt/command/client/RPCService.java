@@ -15,5 +15,5 @@ public interface RPCService extends RemoteService {
 	 R extends IReturn,
 	 P extends IProcedure<A, R>,
 	 E extends IRemoteProcedure<A,R,P>> 
-	R execute(E procedure);
+	R execute(E command);
 }

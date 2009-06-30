@@ -19,12 +19,11 @@ public class RPCServiceImpl extends
 		System.out.println(serializedRequest);
 	}
 
-	@Override
-	public
+	public 
 	<A extends IArguments, 
-	 R extends IReturn,
-	 P extends IProcedure<A, R>,
-	 E extends IRemoteProcedure<A,R,P>> 
+	 R extends IReturn, 
+	 P extends IProcedure<A, R>, 
+	 E extends IRemoteProcedure<A, R, P>> 
 	R execute(E command) {
 		A arguments = command.getArguments();
 		P procedure = command.getProcedure(); 
