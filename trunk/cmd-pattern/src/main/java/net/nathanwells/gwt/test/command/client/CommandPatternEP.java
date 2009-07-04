@@ -12,12 +12,7 @@ import com.google.gwt.core.client.GWT;
 public class CommandPatternEP implements EntryPoint {
 
 	public void onModuleLoad() {
-		RPCServiceAsync	service = GWT.create(RPCService.class);
-		service.<GetTaskDetailArgs,
-				 TaskDetail,
-				 GetTaskDetailProcedure,
-				 GetTaskDetailRPC>
-				execute(new GetTaskDetailRPC(), new GetTaskDetailCallback());
-
+		RPCServiceAsync<TaskDetail, GetTaskDetailRPC> service = GWT.create(RPCService.class);
+		service.execute(new GetTaskDetailRPC(), new GetTaskDetailCallback());
 	}
 }
