@@ -35,11 +35,12 @@ public class RPCServiceImpl extends RemoteServiceServlet implements RPCService {
 					"of the IProcedure class you wish to call.");
 		}
 
-		procedureName = annotation.value();
+//		procedureName = annotation.value();
 		
 		try {
 			//this throws ClassNotFoundException (check your classpath for the IProcedure)
-			procedureClass = Class.forName(procedureName);
+//			procedureClass = Class.forName(procedureName);
+			procedureClass = annotation.value();
 			//this throws InstantiationException, IllegalAccessException (what to do here?)
 			procedure = (IProcedure<R, P>) procedureClass.newInstance();
 			/*
