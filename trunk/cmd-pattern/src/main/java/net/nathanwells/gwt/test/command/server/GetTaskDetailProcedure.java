@@ -6,7 +6,6 @@ import net.nathanwells.gwt.test.command.client.TaskDetail;
 
 public class GetTaskDetailProcedure implements IProcedure<TaskDetail, GetTaskDetailRPC> {
 
-	@Override
 	public TaskDetail go(GetTaskDetailRPC call) {
 		TaskDetail result = new TaskDetail("Foo");
 		return result;
