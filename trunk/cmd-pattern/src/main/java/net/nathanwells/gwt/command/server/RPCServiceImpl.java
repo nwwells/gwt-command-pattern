@@ -22,7 +22,7 @@ public class RPCServiceImpl extends RemoteServiceServlet implements RPCService {
 			P procedureCall) {
 		CalledProcedure annotation = procedureCall.getClass().getAnnotation(
 				CalledProcedure.class);
-		String procedureName;
+//		String procedureName;
 		IProcedure<R, P> procedure;
 		Class<?> procedureClass;
 
