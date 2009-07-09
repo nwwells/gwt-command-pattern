@@ -7,7 +7,7 @@ public class TaskDetail implements IReturn {
 	private String detail;
 
 	public TaskDetail() {
-		this("");
+		this("BAR!");
 	}
 
 	public TaskDetail(String detail) {

@@ -1,4 +1,7 @@
-package net.nathanwells.gwt.command.client;
+package net.nathanwells.gwt.command.client.service;
+
+import net.nathanwells.gwt.command.client.IRemoteProcedure;
+import net.nathanwells.gwt.command.client.IReturn;
 
 import com.google.gwt.user.client.rpc.RemoteService;
 import com.google.gwt.user.client.rpc.RemoteServiceRelativePath;
@@ -8,6 +11,5 @@ import com.google.gwt.user.client.rpc.RemoteServiceRelativePath;
  */
 @RemoteServiceRelativePath("rpc")
 public interface RPCService extends RemoteService {
-
 	<R extends IReturn, P extends IRemoteProcedure<R>> R execute(P procedureCall);
 }

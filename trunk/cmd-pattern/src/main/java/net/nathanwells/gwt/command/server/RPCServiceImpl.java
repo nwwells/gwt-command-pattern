@@ -1,10 +1,9 @@
 package net.nathanwells.gwt.command.server;
 
 import net.nathanwells.gwt.command.client.CalledProcedure;
-import net.nathanwells.gwt.command.client.IProcedure;
 import net.nathanwells.gwt.command.client.IRemoteProcedure;
 import net.nathanwells.gwt.command.client.IReturn;
-import net.nathanwells.gwt.command.client.RPCService;
+import net.nathanwells.gwt.command.client.service.RPCService;
 
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 

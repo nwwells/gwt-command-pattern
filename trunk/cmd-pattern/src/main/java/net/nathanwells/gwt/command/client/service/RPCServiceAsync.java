@@ -1,4 +1,7 @@
-package net.nathanwells.gwt.command.client;
+package net.nathanwells.gwt.command.client.service;
+
+import net.nathanwells.gwt.command.client.IRemoteProcedure;
+import net.nathanwells.gwt.command.client.IReturn;
 
 import com.google.gwt.user.client.rpc.AsyncCallback;
 
