@@ -9,7 +9,7 @@ import com.google.gwt.user.client.rpc.AsyncCallback;
 public class RPCDispatchImpl implements RPCDispatch {
 	
 	@Override
-	public <R extends IReturn, P extends IRemoteProcedure<R>> void execute(
+	public <R extends IReturn, P extends IRemoteProcedure> void execute(
 			P procedureCall, AsyncCallback<R> callback) {
 		RPCServiceAsync<R,P> realService = GWT.create(RPCService.class);
 		realService.execute(procedureCall, callback);

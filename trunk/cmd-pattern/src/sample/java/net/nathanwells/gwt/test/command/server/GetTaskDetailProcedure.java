@@ -1,8 +1,8 @@
 package net.nathanwells.gwt.test.command.server;
 
 import net.nathanwells.gwt.command.server.IProcedure;
-import net.nathanwells.gwt.test.command.client.GetTaskDetailRPC;
-import net.nathanwells.gwt.test.command.client.TaskDetail;
+import net.nathanwells.gwt.test.command.client.get.GetTaskDetailRPC;
+import net.nathanwells.gwt.test.command.client.get.TaskDetail;
 
 public class GetTaskDetailProcedure implements IProcedure<TaskDetail, GetTaskDetailRPC> {
 

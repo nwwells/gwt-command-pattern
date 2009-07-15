@@ -12,6 +12,6 @@ import com.google.gwt.user.client.rpc.AsyncCallback;
  * 
  * @author Nathan Wells
  */
-public interface RPCServiceAsync<R extends IReturn, P extends IRemoteProcedure<R>> {
+public interface RPCServiceAsync<R extends IReturn, P extends IRemoteProcedure> {
 	void execute(P procedureCall, AsyncCallback<R> callback);
 }

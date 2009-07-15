@@ -17,7 +17,7 @@ import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 public class RPCServiceImpl extends RemoteServiceServlet implements RPCService {
 
 	@SuppressWarnings("unchecked")
-	public <R extends IReturn, P extends IRemoteProcedure<R>> R execute(
+	public <R extends IReturn, P extends IRemoteProcedure> R execute(
 			P procedureCall) {
 		CalledProcedure annotation = procedureCall.getClass().getAnnotation(
 				CalledProcedure.class);

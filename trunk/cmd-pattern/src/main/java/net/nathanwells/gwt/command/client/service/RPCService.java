@@ -11,5 +11,5 @@ import com.google.gwt.user.client.rpc.RemoteServiceRelativePath;
  */
 @RemoteServiceRelativePath("rpc")
 public interface RPCService extends RemoteService {
-	<R extends IReturn, P extends IRemoteProcedure<R>> R execute(P procedureCall);
+	<R extends IReturn, P extends IRemoteProcedure> R execute(P procedureCall);
 }
